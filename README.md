@@ -7,4 +7,4 @@ Please refer to the individual workflow README files listed below for more detai
 
 ## Published CWL workflows
 
-* [TOPMed RNA-seq pipeline](topmed-workflows/TOPMed_RNAseq_pipeline/README.md)
+* [TOPMed RNA-seq pipeline](https://github.com/heliumdatacommons/TOPMed_RNAseq_CWL)
