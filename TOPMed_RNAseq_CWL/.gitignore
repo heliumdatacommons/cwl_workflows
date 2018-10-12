@@ -1,8 +1,0 @@
-.DS_Store
-**/temp/
-**/venv/
-**/local/
-topmed-workflows/TOPMed_RNAseq_pipeline/Docker/src/
-topmed-workflows/TOPMed_RNAseq_pipeline/test-data/reference-files/
-topmed-workflows/TOPMed_RNAseq_pipeline/test-data/rsem_reference/
-topmed-workflows/TOPMed_RNAseq_pipeline/test-data/star_chr12/

@@ -1,6 +1,0 @@
-bam_one:
-  class: File
-  location: LC_C13_cRNA.Aligned.sortedByCoord.out.bam
-bam_two:
-  class: File
-  location: LC_C13_cRNA.Aligned.sortedByCoord.out.bam

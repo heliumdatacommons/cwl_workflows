@@ -1,3 +1,0 @@
-input_tar:
-  class: File
-  path: star-index-chr12.tar.gz
