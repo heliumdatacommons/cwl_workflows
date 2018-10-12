@@ -1,0 +1,21 @@
+archive: data/test.tar
+files:
+  - class: File
+    path: data/test0
+  - class: File
+    path: data/test1
+  - class: File
+    path: data/test2
+  - class: File
+    path: data/test3
+  - class: File
+    path: data/test4
+touch_files:
+  - data/newfile0
+  - data/newfile1
+  - data/newfile2
+  - data/newfile3
+  - data/newfile4
+new_archive: data/testrenamed.tar
+echo_message: "this is an echo message"
+echo_output_location: data/echomessage

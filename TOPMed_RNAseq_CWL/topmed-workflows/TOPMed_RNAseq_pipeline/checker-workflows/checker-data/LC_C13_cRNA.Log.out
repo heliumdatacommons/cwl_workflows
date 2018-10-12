@@ -1,0 +1,529 @@
+STAR version=STAR_2.5.3a
+STAR compilation time,server,dir=Sat Dec 2 20:29:20 UTC 2017 e7eddde82bec:/opt/STAR-2.5.3a/source
+##### DEFAULT parameters:
+versionSTAR                       20201
+versionGenome                     20101   20200   
+parametersFiles                   -   
+sysShell                          -
+runMode                           alignReads
+runThreadN                        1
+runDirPerm                        User_RWX
+runRNGseed                        777
+genomeDir                         ./GenomeDir/
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  -   
+genomeChainFiles                  -   
+genomeSAindexNbases               14
+genomeChrBinNbits                 18
+genomeSAsparseD                   1
+genomeSuffixLengthMax             18446744073709551615
+genomeFileSizes                   0   
+readFilesIn                       Read1   Read2   
+readFilesCommand                  -   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+readNameSeparator                 /   
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+limitSjdbInsertNsj                1000000
+outTmpDir                         -
+outTmpKeep                        None
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outMultimapperOrder               Old_2.4
+outSAMtype                        SAM   
+outSAMmode                        Full
+outSAMstrandField                 None
+outSAMattributes                  Standard   
+outSAMunmapped                    None   
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  -   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outSAMfilter                      None   
+outSAMmultNmax                    18446744073709551615
+outSAMattrIHstart                 1
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     Normal
+outFilterMultimapNmax             10
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.66
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.66
+outFilterMismatchNmax             10
+outFilterMismatchNoverLmax        0.3
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+winReadCoverageRelativeMin        0.5
+winReadCoverageBasesMin           0
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+alignIntronMin                    21
+alignIntronMax                    0
+alignMatesGapMax                  0
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                5
+alignSJDBoverhangMin              3
+alignSJstitchMismatchNmax         0   -1   0   0   
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+alignEndsProtrude                 0   ConcordantPair   
+chimSegmentMin                    0
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimMainSegmentMultNmax           10
+chimJunctionOverhangMin           20
+chimOutType                       SeparateSAMold   
+chimFilter                        banGenomicN   
+chimSegmentReadGapMax             0
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       -
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      100
+sjdbScore                         2
+sjdbInsertSave                    Basic
+quantMode                         -   
+quantTranscriptomeBAMcompression    1
+quantTranscriptomeBan             IndelSoftclipSingleend
+twopass1readsN                    18446744073709551615
+twopassMode                       None
+##### Command Line:
+STAR --runMode alignReads --runThreadN 4 --genomeDir /private/var/lib/cwl/stg22fbc8e0-c93a-4486-9d97-40522a8adbf2/star_chr12_index --twopassMode Basic --outFilterMultimapNmax 20 --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --outFilterMismatchNoverLmax 0.1 --alignIntronMin 20 --alignIntronMax 1000000 --alignMatesGapMax 1000000 --outFilterType BySJout --outFilterScoreMinOverLread 0.33 --outFilterMatchNminOverLread 0.33 --limitSjdbInsertNsj 1200000 --readFilesIn /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix ./LC_C13_cRNA. --outSAMstrandField intronMotif --outFilterIntronMotifs None --alignSoftClipAtReferenceEnds Yes --quantMode TranscriptomeSAM GeneCounts --outSAMtype BAM Unsorted --outSAMunmapped Within --genomeLoad NoSharedMemory --chimSegmentMin 15 --chimJunctionOverhangMin 15 --chimOutType WithinBAM SoftClip --chimMainSegmentMultNmax 1 --outSAMattributes NH HI AS nM NM ch --outSAMattrRGline ID:rg1 SM:sm1
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 ./LC_C13_cRNA.
+###### All USER parameters from Command Line:
+runMode                       alignReads     ~RE-DEFINED
+runThreadN                    4     ~RE-DEFINED
+genomeDir                     /private/var/lib/cwl/stg22fbc8e0-c93a-4486-9d97-40522a8adbf2/star_chr12_index     ~RE-DEFINED
+twopassMode                   Basic     ~RE-DEFINED
+outFilterMultimapNmax         20     ~RE-DEFINED
+alignSJoverhangMin            8     ~RE-DEFINED
+alignSJDBoverhangMin          1     ~RE-DEFINED
+outFilterMismatchNmax         999     ~RE-DEFINED
+outFilterMismatchNoverLmax    0.1     ~RE-DEFINED
+alignIntronMin                20     ~RE-DEFINED
+alignIntronMax                1000000     ~RE-DEFINED
+alignMatesGapMax              1000000     ~RE-DEFINED
+outFilterType                 BySJout     ~RE-DEFINED
+outFilterScoreMinOverLread    0.33     ~RE-DEFINED
+outFilterMatchNminOverLread   0.33     ~RE-DEFINED
+limitSjdbInsertNsj            1200000     ~RE-DEFINED
+readFilesIn                   /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz   /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+outFileNamePrefix             ./LC_C13_cRNA.     ~RE-DEFINED
+outSAMstrandField             intronMotif     ~RE-DEFINED
+outFilterIntronMotifs         None     ~RE-DEFINED
+alignSoftClipAtReferenceEnds  Yes     ~RE-DEFINED
+quantMode                     TranscriptomeSAM   GeneCounts        ~RE-DEFINED
+outSAMtype                    BAM   Unsorted        ~RE-DEFINED
+outSAMunmapped                Within        ~RE-DEFINED
+genomeLoad                    NoSharedMemory     ~RE-DEFINED
+chimSegmentMin                15     ~RE-DEFINED
+chimJunctionOverhangMin       15     ~RE-DEFINED
+chimOutType                   WithinBAM   SoftClip        ~RE-DEFINED
+chimMainSegmentMultNmax       1     ~RE-DEFINED
+outSAMattributes              NH   HI   AS   nM   NM   ch        ~RE-DEFINED
+outSAMattrRGline              ID:rg1   SM:sm1        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           alignReads
+runThreadN                        4
+genomeDir                         /private/var/lib/cwl/stg22fbc8e0-c93a-4486-9d97-40522a8adbf2/star_chr12_index
+genomeLoad                        NoSharedMemory
+readFilesIn                       /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz   /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz   
+readFilesCommand                  zcat   
+limitSjdbInsertNsj                1200000
+outFileNamePrefix                 ./LC_C13_cRNA.
+outSAMtype                        BAM   Unsorted   
+outSAMstrandField                 intronMotif
+outSAMattributes                  NH   HI   AS   nM   NM   ch   
+outSAMunmapped                    Within   
+outSAMattrRGline                  ID:rg1   SM:sm1   
+outFilterType                     BySJout
+outFilterMultimapNmax             20
+outFilterScoreMinOverLread        0.33
+outFilterMatchNminOverLread       0.33
+outFilterMismatchNmax             999
+outFilterMismatchNoverLmax        0.1
+outFilterIntronMotifs             None
+alignIntronMin                    20
+alignIntronMax                    1000000
+alignMatesGapMax                  1000000
+alignSJoverhangMin                8
+alignSJDBoverhangMin              1
+alignSoftClipAtReferenceEnds      Yes
+chimSegmentMin                    15
+chimMainSegmentMultNmax           1
+chimJunctionOverhangMin           15
+chimOutType                       WithinBAM   SoftClip   
+quantMode                         TranscriptomeSAM   GeneCounts   
+twopassMode                       Basic
+
+-------------------------------
+##### Final effective command line:
+STAR   --runMode alignReads   --runThreadN 4   --genomeDir /private/var/lib/cwl/stg22fbc8e0-c93a-4486-9d97-40522a8adbf2/star_chr12_index   --genomeLoad NoSharedMemory   --readFilesIn /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz   /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz      --readFilesCommand zcat      --limitSjdbInsertNsj 1200000   --outFileNamePrefix ./LC_C13_cRNA.   --outSAMtype BAM   Unsorted      --outSAMstrandField intronMotif   --outSAMattributes NH   HI   AS   nM   NM   ch      --outSAMunmapped Within      --outSAMattrRGline ID:rg1   SM:sm1      --outFilterType BySJout   --outFilterMultimapNmax 20   --outFilterScoreMinOverLread 0.33   --outFilterMatchNminOverLread 0.33   --outFilterMismatchNmax 999   --outFilterMismatchNoverLmax 0.1   --outFilterIntronMotifs None   --alignIntronMin 20   --alignIntronMax 1000000   --alignMatesGapMax 1000000   --alignSJoverhangMin 8   --alignSJDBoverhangMin 1   --alignSoftClipAtReferenceEnds Yes   --chimSegmentMin 15   --chimMainSegmentMultNmax 1   --chimJunctionOverhangMin 15   --chimOutType WithinBAM   SoftClip      --quantMode TranscriptomeSAM   GeneCounts      --twopassMode Basic
+
+##### Final parameters after user input--------------------------------:
+versionSTAR                       20201
+versionGenome                     20101   20200   
+parametersFiles                   -   
+sysShell                          -
+runMode                           alignReads
+runThreadN                        4
+runDirPerm                        User_RWX
+runRNGseed                        777
+genomeDir                         /private/var/lib/cwl/stg22fbc8e0-c93a-4486-9d97-40522a8adbf2/star_chr12_index
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  -   
+genomeChainFiles                  -   
+genomeSAindexNbases               14
+genomeChrBinNbits                 18
+genomeSAsparseD                   1
+genomeSuffixLengthMax             18446744073709551615
+genomeFileSizes                   0   
+readFilesIn                       /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz   /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz   
+readFilesCommand                  zcat   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+readNameSeparator                 /   
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+limitSjdbInsertNsj                1200000
+outFileNamePrefix                 ./LC_C13_cRNA.
+outTmpDir                         -
+outTmpKeep                        None
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outMultimapperOrder               Old_2.4
+outSAMtype                        BAM   Unsorted   
+outSAMmode                        Full
+outSAMstrandField                 intronMotif
+outSAMattributes                  NH   HI   AS   nM   NM   ch   
+outSAMunmapped                    Within   
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  ID:rg1   SM:sm1   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outSAMfilter                      None   
+outSAMmultNmax                    18446744073709551615
+outSAMattrIHstart                 1
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     BySJout
+outFilterMultimapNmax             20
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.33
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.33
+outFilterMismatchNmax             999
+outFilterMismatchNoverLmax        0.1
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+winReadCoverageRelativeMin        0.5
+winReadCoverageBasesMin           0
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+alignIntronMin                    20
+alignIntronMax                    1000000
+alignMatesGapMax                  1000000
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                8
+alignSJDBoverhangMin              1
+alignSJstitchMismatchNmax         0   -1   0   0   
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+alignEndsProtrude                 0   ConcordantPair   
+chimSegmentMin                    15
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimMainSegmentMultNmax           1
+chimJunctionOverhangMin           15
+chimOutType                       WithinBAM   SoftClip   
+chimFilter                        banGenomicN   
+chimSegmentReadGapMax             0
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       -
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      100
+sjdbScore                         2
+sjdbInsertSave                    Basic
+quantMode                         TranscriptomeSAM   GeneCounts   
+quantTranscriptomeBAMcompression    1
+quantTranscriptomeBan             IndelSoftclipSingleend
+twopass1readsN                    18446744073709551615
+twopassMode                       Basic
+----------------------------------------
+
+
+   Input read files for mate 1, from input string /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz
+-rw-r--r-- 1 1971330933 1523074893 947150 Jun  5 20:55 /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz
+
+   readsCommandsFile:
+exec > "./LC_C13_cRNA._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "/private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz"
+
+
+   Input read files for mate 2, from input string /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz
+-rw-r--r-- 1 1971330933 1523074893 918814 Jun  5 20:55 /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz
+
+   readsCommandsFile:
+exec > "./LC_C13_cRNA._STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "/private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz"
+
+WARNING --outSAMattrRG defines a read group, therefore STAR will output RG attribute
+WARNING --outSAMstrandField=intronMotif, therefore STAR will output XS attribute
+Finished loading and checking parameters
+Reading genome generation parameters:
+versionGenome                 20201        ~RE-DEFINED
+genomeFastaFiles              /temp/chr12.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   /temp/gencode.v26.annotation.chr12.withTranscriptID.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               137454914   1131416685        ~RE-DEFINED
+Genome version is compatible with current STAR version
+Number of real (reference) chromosomes= 1
+1	chr12	133275309	0
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Tue Jun  5 21:18:38 2018
+
+Genome: size given as a parameter = 137454914
+SA: size given as a parameter = 1131416685
+/SAindex: size given as a parameter = 1
+Read from SAindex: genomeSAindexNbases=14  nSAi=357913940
+nGenome=137454914;  nSAbyte=1131416685
+GstrandBit=32   SA number of indices=274282832
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 137454914 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 137454914 bytes
+SA file size: 1131416685 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 1131416685 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Tue Jun  5 21:18:52 2018
+
+Processing splice junctions database sjdbN=20018,   sjdbOverhang=100 
+To accomodate alignIntronMax=1000000 redefined winBinNbits=18
+To accomodate alignIntronMax=1000000 and alignMatesGapMax=1000000, redefined winFlankNbins=4 and winAnchorDistNbins=8
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate1.thread0 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate2.thread0 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate1.thread1 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate2.thread1 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate1.thread2 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate2.thread2 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate1.thread3 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate2.thread3 ... ok
+Created thread # 1
+Starting to map file # 0
+mate 1:   /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz
+mate 2:   /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz
+Created thread # 2
+Created thread # 3
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #2
+Completed: thread #3
+Completed: thread #0
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Jun 05 21:19:45   Loaded database junctions from the generated genome /private/var/lib/cwl/stg22fbc8e0-c93a-4486-9d97-40522a8adbf2/star_chr12_index/sjdbList.out.tab: 20018 total junctions
+
+Jun 05 21:19:45   Loaded database junctions from the 1st pass file: ./LC_C13_cRNA._STARpass1//SJ.out.tab: 20162 total junctions
+
+Jun 05 21:19:45   Finished preparing junctions
+Jun 05 21:19:45 ..... inserting junctions into the genome indices
+Jun 05 21:19:45   Finished SA search: number of new junctions=25, old junctions=20018
+Jun 05 21:19:46   Finished sorting SA indicesL nInd=10000
+Jun 05 21:19:51   Finished inserting junction indices
+Jun 05 21:19:57   Finished SAi
+Jun 05 21:19:57 ..... finished inserting junctions into genome
+
+   Input read files for mate 1, from input string /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz
+-rw-r--r-- 1 1971330933 1523074893 947150 Jun  5 20:55 /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz
+
+   readsCommandsFile:
+exec > "./LC_C13_cRNA._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "/private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz"
+
+
+   Input read files for mate 2, from input string /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz
+-rw-r--r-- 1 1971330933 1523074893 918814 Jun  5 20:55 /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz
+
+   readsCommandsFile:
+exec > "./LC_C13_cRNA._STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "/private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz"
+
+Loaded transcript database, nTr=11488
+Loaded exon database, nEx=70137
+Opening the file: ./LC_C13_cRNA._STARtmp//Chimeric.out.sam.thread0 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//Chimeric.out.junction.thread0 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate1.thread0 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate2.thread0 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//Chimeric.out.sam.thread1 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//Chimeric.out.junction.thread1 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate1.thread1 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate2.thread1 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//Chimeric.out.sam.thread2 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//Chimeric.out.junction.thread2 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate1.thread2 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate2.thread2 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//Chimeric.out.sam.thread3 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//Chimeric.out.junction.thread3 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate1.thread3 ... ok
+Opening the file: ./LC_C13_cRNA._STARtmp//FilterBySJoutFiles.mate2.thread3 ... ok
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Starting to map file # 0
+mate 1:   /private/var/lib/cwl/stg6d16df81-6a69-40ff-a279-636f4ec257f5/LC_C13_cRNA_sequence_R1_sub.fastq.gz
+mate 2:   /private/var/lib/cwl/stg814c0b96-4a92-4970-a343-a545ae0ce068/LC_C13_cRNA_sequence_R2_sub.fastq.gz
+Thread #0 end of input stream, nextChar=-1
+Completed: thread #2
+Completed: thread #1
+Completed: thread #3
+Completed: thread #0
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Completed stage 1 mapping of outFilterBySJout mapping
+Detected 0 novel junctions that passed filtering, will proceed to filter reads that contained unannotated junctions
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Completed: thread #1
+Completed: thread #2
+Completed: thread #3
+Completed: thread #0
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+ALL DONE!

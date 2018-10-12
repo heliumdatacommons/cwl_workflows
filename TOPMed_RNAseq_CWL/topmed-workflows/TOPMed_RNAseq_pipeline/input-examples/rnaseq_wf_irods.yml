@@ -1,0 +1,30 @@
+star_index:
+    class: Directory
+    location: /renci/irods/topmed-demo/RNA-seq/checker-data/star_chr12_index
+fastqs: [
+    {class: File,
+    location: /renci/irods/topmed-demo/RNA-seq/checker-data/sample/LC_C13_cRNA_sequence_R1_sub.fastq.gz},
+    {class: File,
+    location: /renci/irods/topmed-demo/RNA-seq/checker-data/sample/LC_C13_cRNA_sequence_R2_sub.fastq.gz}
+]
+rsem_ref_dir:
+    class: Directory
+    location: /renci/irods/topmed-demo/RNA-seq/checker-data/rsem_reference
+max_frag_len: 1000
+estimate_rspd: "true"
+is_stranded: "true"
+paired_end: "true"
+genes_gtf: {
+    class: File,
+    location: /renci/irods/topmed-demo/RNA-seq/checker-data/reference-files/gencode.v26.annotation.chr12.withTranscriptID.gtf
+}
+genome_fasta: {
+    class: File,
+    location: /renci/irods/topmed-demo/RNA-seq/checker-data/reference-files/chr12.fa
+}
+java_path: /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/java
+memory: 8
+rnaseqc_flags: ["noDoC", "strictMode"]
+# gatk_flags: []
+prefix_str: "LC_C13_cRNA"
+threads: 4

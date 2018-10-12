@@ -1,0 +1,59 @@
+star_index:
+    class: Directory
+    location: ../../test-data/star_chr12
+fastqs: [
+    {class: File,
+    location: ../../test-data/sample/LC_C13_cRNA_sequence_R1_sub.fastq.gz},
+    {class: File,
+    location: ../../test-data/sample/LC_C13_cRNA_sequence_R2_sub.fastq.gz}
+]
+rsem_ref_dir:
+    class: Directory
+    location: ../../test-data/rsem_reference
+max_frag_len: 1000
+estimate_rspd: "true"
+is_stranded: "true"
+paired_end: "true"
+genes_gtf: {
+    class: File,
+    location: ../../test-data/reference-files/gencode.v26.annotation.chr12.withTranscriptID.gtf
+}
+genome_fasta: {
+    class: File,
+    location: ../../test-data/reference-files/chr12.fa
+}
+java_path: /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/java
+memory: 8
+rnaseqc_flags: ["noDoC", "strictMode"]
+# gatk_flags: []
+prefix_str: "LC_C13_cRNA"
+threads: 4
+hash_chimeric_junctions: "ad3070bbd5f687a1f66634b68df0312c"
+hash_read_counts: "0526359bd033a0d1703d1457a42d2c5f"
+hash_junctions: "38a3e59e554ae289dce1ed68c13d046d"
+hash_junctions_pass1: "b9ca78197eed7f926229f945adc4d6d3"
+# hash_markduplicates_metrics: "9bc6903fb0af2c4bb95610b549baf9d1"
+hash_gene_results: "a27a8ab6d55aed2ff71490502368db5d"
+hash_isoforms_results: "c3e7b91e75f5e9dd8fd91853b2c10f0d"
+# hash_gene_rpkm: "1cc5f31a0762c75c6e016a8167f53949"
+# hash_gene_counts: "6d975d5c36efe27312cc719ae79eb429"
+# hash_exon_counts: "1d884f2dc3544336d9c1470b551222c8"
+hash_count_metrics: "f01d2a027c3b5c94d2941d42b8c8e7c7"
+# hash_count_outputs: "0b37386650ff7dbfb0c567381bf91bdb"
+checker_star_output_bam: {
+    class: File,
+    location: ../checker-data/LC_C13_cRNA.Aligned.sortedByCoord.out.bam
+}
+checker_transcriptome_bam: {
+    class: File,
+    location: ../checker-data/LC_C13_cRNA.Aligned.toTranscriptome.out.bam
+}
+checker_chimeric_bam_file: {
+    class: File,
+    location: ../checker-data/LC_C13_cRNA.Chimeric.out.sorted.bam
+}
+checker_markduplicates_bam: {
+    class: File,
+    location: ../checker-data/LC_C13_cRNA.Aligned.sortedByCoord.out.md.bam
+}
+known_str: ""

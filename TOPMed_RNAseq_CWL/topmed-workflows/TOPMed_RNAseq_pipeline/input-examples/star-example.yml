@@ -1,0 +1,11 @@
+star_index:
+    class: Directory
+    location: /star_index/
+fastqs: [
+    {class: File,
+    path: LC_C13_cRNA_sequence_R1.fastq.gz},
+    {class: File,
+    path: LC_C13_cRNA_sequence_R2.fastq.gz}
+]
+prefix_str: "LC_C13_cRNA"
+threads: 4

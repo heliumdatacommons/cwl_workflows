@@ -1,0 +1,4 @@
+input_bam: {
+    class: File,
+    path: LC_C13_cRNA.Aligned.sortedByCoord.out.md.bam
+}

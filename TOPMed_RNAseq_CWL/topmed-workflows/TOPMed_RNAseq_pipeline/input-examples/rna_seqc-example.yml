@@ -1,0 +1,17 @@
+bam_file: {
+    class: File,
+    path: LC_C13_cRNA.Aligned.sortedByCoord.out.md.bam
+}
+genes_gtf: {
+    class: File,
+    path: gencode.v26.annotation.withTranscriptID.gtf
+}
+genome_fasta: {
+    class: File,
+    path: Homo_sapiens_assembly38_noALT_noHLA_noDecoy_ERCC.fasta
+}
+prefix_str: "LC_C13_cRNA"
+java_path: /usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/java
+memory: 8
+rnaseqc_flags: ["noDoC", "strictMode"]
+# gatk_flags: []

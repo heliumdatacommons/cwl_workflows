@@ -1,0 +1,3 @@
+in_file:
+  class: File
+  path: gencode.v26.annotation.chr12.withTranscriptID.gtf

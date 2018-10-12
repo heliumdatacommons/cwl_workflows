@@ -1,0 +1,4 @@
+file_to_check:
+  class: File
+  path: LC_C13_cRNA.Chimeric.out.junction
+input_hash: "ad3070bbd5f687a1f66634b68df0312c"
